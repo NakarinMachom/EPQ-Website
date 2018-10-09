@@ -1,0 +1,134 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+header {
+  width: 100%;
+	height: 5%;
+  background-color: white;
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav {
+  float: right;
+  text-align: right;
+}
+
+header nav ul {
+  list-style: none;
+  float: right;
+}
+
+nav ul li {
+  float: left;
+  margin-right: 2vw;
+	margin-top: 0.5vw;
+}
+
+.nav-buttons {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 2vw;
+}
+
+#artwork:hover {
+	color: #f6b93b;
+}
+
+#digitalwork:hover {
+	color: #e55039;
+}
+
+#about:hover {
+	color: #3867d6;
+}
+
+#logo {
+  text-decoration: none;
+  font-weight: bold;
+  float: left;
+  color: black;
+	margin-left: 2vw;
+  font-size: 2vw;
+	margin-top: 0.5vw;
+}
+
+#logo:hover {
+	color: #ffb8b8;
+}
+
+#logodark {
+  text-decoration: none;
+  font-weight: bold;
+  float: left;
+  color: white;
+	margin-left: 2vw;
+  font-size: 2vw;
+	margin-top: 0.5vw;
+}
+
+#logodark:hover {
+	color: #ffb8b8;
+}
+
+#hamburger {
+	display: none;
+	width: 35px;
+	height: 35px;
+}
+
+@media only screen and (max-width: 640px) {
+	header {
+		position: absolute;
+		height: 5%;
+	}
+
+	#logo {
+		font-size: 5vw;
+		margin-top: 1vw;
+	}
+
+	#hamburger {
+		display: inline-block;
+	}
+
+	nav ul, nav:active ul {
+		display: none;
+		position: absolute;
+		padding: 20px;
+		background: #c5c5c5;
+		right: 10px;
+		top: ;
+		width: 35%;
+	}
+
+	nav:hover ul {
+		display: block;
+	}
+
+	nav li {
+		text-align: center;
+		width: 100%;
+		padding: 15px 0;
+		margin: 0;
+	}
+}
