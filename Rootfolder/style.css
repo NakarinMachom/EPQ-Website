@@ -19,28 +19,12 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-#headerdark {
+header {
   width: 100%;
 	height: 5%;
-  background-color: black;
-	animation-name: headerdark;
-	animation-duration: 1.5s;
-	animation-timing-function: ease-in;
-	-webkit-animation-name: headerdark;
-	-webkit-animation-duration: 1.5s;
-	-webkit-animation-timing-function: ease-in;
+  background-color: white;
   display: inline-block;
   font-family: 'Poppins', sans-serif;
-}
-
-@keyframes headerdark {
-	from {background-color: white;}
-  to {background-color: black;}
-}
-
-@-webkit-keyframes headerdark {
-	from {background-color: white;}
-  to {background-color: black;}
 }
 
 nav {
@@ -59,10 +43,10 @@ nav ul li {
 	margin-top: 0.5vw;
 }
 
-.nav-buttonsdark {
+.nav-buttons {
   text-decoration: none;
   font-weight: bold;
-  color: white;
+  color: black;
   font-size: 2vw;
 }
 
@@ -78,36 +62,91 @@ nav ul li {
 	color: #3867d6;
 }
 
-#logodark {
+#logo {
   text-decoration: none;
   font-weight: bold;
   float: left;
-  color: white;
+  color: black;
 	margin-left: 2vw;
   font-size: 2vw;
 	margin-top: 0.5vw;
 }
 
-#logodark:hover {
+#logo:hover {
 	color: #ffb8b8;
 }
 
-body {
-	background-color: black;
-	animation-name: bodydark;
-  animation-duration: 1.5s;
-	animation-timing-function: ease-in;
-	-webkit-animation-name: bodydark;
-  -webkit-animation-duration: 1.5s;
-	-webkit-animation-timing-function: ease-in;
+#hamburger {
+	display: none;
+	width: 35px;
+	height: 35px;
 }
 
-@keyframes bodydark {
-	from {background-color: white;}
-  to {background-color: black;}
+.homepagetext {
+	font-family: "Poppins", sans-serif;
+	font-weight: bold;
+	font-size: 7vw;
+	z-index: 100;
+	line-height: 0;
 }
 
-@-webkit-keyframes bodydark {
-	from {background-color: white;}
-  to {background-color: black;}
+#art {
+	margin-top: 4.5vw;
+	margin-left: 11.95vw;
+	float: left;
+	line-height: 0;
+}
+
+#student {
+	margin-top: 42vw;
+	margin-right: 9vw;
+	float: right;
+}
+
+#home-image-slide {
+	position: absolute;
+	margin-top: 3vw;
+	margin-left: 20vw;
+	padding: 0;
+	width: 60vw;
+	z-index: -1;
+}
+
+.image-slide {
+  display: none;
+	max-width: 100%;
+}
+
+@media only screen and (max-width: 640px) {
+	header {
+		position: absolute;
+		height: 5%;
+	}
+
+	#logo {
+		font-size: 5vw;
+		margin-top: 1vw;
+	}
+
+	#hamburger {
+		display: inline-block;
+	}
+
+	nav ul, nav:active ul {
+		display: none;
+		position: absolute;
+		background: black;
+	}
+
+	nav:hover ul {
+		display: block;
+		width: 35%;
+		height: 100%;
+	}
+
+	nav li {
+		text-align: center;
+		width: 100%;
+		margin: 0;
+	}
 }
