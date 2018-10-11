@@ -111,3 +111,57 @@ body {
 	from {background-color: white;}
   to {background-color: black;}
 }
+
+#side-nav {
+	padding-top: 2vw;
+	float: left;
+	text-align: left;
+}
+
+#side-nav ul {
+	list-style: none;
+	float: left;
+}
+
+#side-nav ul li a {
+	font-family: "Source Code Pro", monospace;
+	font-size: 1vw;
+}
+
+#aboutparagraph {
+	float: left;
+	text-align: justify;
+	text-justify: inter-word;
+	padding-top: 2vw;
+	padding-right: 2vw;
+	padding-left: 17vw;
+	color: white;
+	font-family: "Source Code Pro", monospace;
+	font-size: 2vw;
+}
+
+#aboutparagraph2 {
+	float: left;
+	text-align: justify;
+	text-justify: inter-word;
+	padding-right: 2vw;
+	padding-left: 17vw;
+	color: white;
+	font-family: "Source Code Pro", monospace;
+	font-size: 2vw;
+}
+
+#aboutparagraph3 {
+	float: left;
+	text-align: justify;
+	text-justify: inter-word;
+	padding-right: 2vw;
+	padding-left: 17vw;
+	color: white;
+	font-family: "Source Code Pro", monospace;
+	font-size: 2vw;
+}
+
+a {
+	color: white;
+}
